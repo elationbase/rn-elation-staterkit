@@ -2,7 +2,7 @@
 
 Make sure you have [React Native](https://facebook.github.io/react-native/docs/getting-started) installed globaly.
 
-## 💻  Running the Project Locally;
+## 💻  Running the Project Locally
 
 ```
 yarn
@@ -23,10 +23,18 @@ This repo uses `@commitlint/config-angular` enforced with commit hook `pre-commi
 Consult [docs/rules](https://www.npmjs.com/package/@commitlint/config-angular) for a list of available rules.
 
 
-
-## 📄  Generate Changelog
+## 📄  Versioning and automated release changelog
 
 ```
-yarn changelog
-```
+// Pre-Release = 0.0.0-X
+yarn version --new-version pre-release
 
+// Patch Release = 0.0.X
+yarn version --new-version patch
+
+// Minor Release = 0.X.0
+yarn version --new-version minor
+
+// Major Release = X.0.0
+yarn version --new-version major
+```
