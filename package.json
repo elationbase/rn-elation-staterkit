@@ -1,13 +1,17 @@
 {
   "name": "rnElationStaterkit",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elationbase/rn-elation-staterkit"
+  },
   "scripts": {
     "changelog": "yarn conventional-changelog -p angular -i CHANGELOG.md -s",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "version": "yarn changelog && git add CHANGELOG.md",
-    "postversion": "git push && git push --tags && conventional-github-releaser -p angular"
+    "postversion": "git push && git push --tags && yarn conventional-github-releaser -p angular"
   },
   "dependencies": {
     "react": "16.8.3",
