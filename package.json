@@ -1,6 +1,6 @@
 {
   "name": "rnElationStaterkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "version": "yarn changelog && git add CHANGELOG.md",
-    "postversion": "git push && git push --tags && yarn conventional-github-releaser -p angular"
+    "postversion": "git push && git push --tags && conventional-github-releaser -p angular -t ae9fb2cc4094bf8364d809d0cc6df81965ea3ff3 -r 0"
   },
   "dependencies": {
     "react": "16.8.3",
